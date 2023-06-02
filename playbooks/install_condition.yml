@@ -1,0 +1,18 @@
+-
+ name: This playbook will install docker based on OS
+ hosts: servers
+ become: yes
+ tasks:
+   - name: install Docker
+     apt:
+        name: docker.io
+        state: latest
+       
+   - name: install awscli
+     apt:
+        name: awscli
+        state: latest
+     when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+  
+
+
