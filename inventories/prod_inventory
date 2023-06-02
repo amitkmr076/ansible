@@ -1,5 +1,5 @@
 [servers]
-prod_1 ansible_host=52.53.253.255
+prod_1 ansible_host= (Insert server ip addresses that you want to add in prod inventory)
 
 [servers:vars]
 ansible_python_interpreter=/usr/bin/python3
