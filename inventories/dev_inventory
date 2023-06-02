@@ -1,5 +1,5 @@
 [servers]
-dev_1 ansible_host=50.18.39.254
+dev_1 ansible_host= Insert (Server IP-Address)
 
 [servers:vars]
 ansible_python_interpreter=/usr/bin/python3
